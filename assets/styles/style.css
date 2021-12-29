@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+}
+
+:root {
+  --color1: #473023;
+  --color2: #579471;
+  --color3: #274735;
+  --color4: #3A6594;
+  --color5: #1F3347;
+}
+/* ################################# GLOBAL ################################# */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+.top-page {
+  color: white;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  padding: 5px 0;
+}
+h2::before {
+  content: "";
+  position: absolute;
+  background: var(--color2);
+  width: 50px;
+  height: 7px;
+  bottom: 0;
+  border-radius: 4px;
+}
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* ################################# TOP PAGE ################################# */
+
+.top-page a, .top-page a:visited {
+  color: white;
+}
+.bg {
+  background: url(../img/bg.jpg) center/cover;
+}
+section.top-page {
+  backdrop-filter: blur(3px) brightness(60%);
+  height: 75vh;
+  padding: 25px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#logo {
+  width: 150px;
+}
+nav {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  margin: 0px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.landing-page {
+  padding: 20px 50px;
+}
+.scrolldown {
+  position: absolute;
+  bottom: 40px;
+  font-size: 3rem;
+  color: var(--color1);
+}
+
+/* ################################# Services ################################# */
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 40px;
+  width: 80%;
+  height: 25vh;
+  margin: 0 auto;
+}
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--color2);
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-align: center;
+  width: 250px;
+  margin: 0 20px;
+}
+.service-item i {
+  font-size: 3.5rem
+}
+
+/* ######################### Notre sélection ######################### */
+
+.our-selection {
+padding: 0 60px;
+position: relative;
+}
+
+.best {
+  display: flex;
+  justify-content: space-evenly;
+  /* min-height: 400px; */
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.house-box {
+  position: relative;
+  margin: 10px;
+}
+.no-grid {
+  min-width: 250px;
+  height: 300px;
+  /* flex: 1; */
+}
+#best1 {
+  background: url(../img/nos_meilleures_ventes/1.jpg) left/cover;
+}
+#best2 {
+  background: url(../img/nos_meilleures_ventes/2.jpg) left/cover;
+}
+#best3 {
+  background: url(../img/nos_meilleures_ventes/3.jpg) left/cover;
+}
+#best4 {
+  background: url(../img/nos_meilleures_ventes/4.jpg) center/cover;
+}
+.house-details {
+  background: #ffffffb9;
+  padding: 5px 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.house-location {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.house-price {
+  color: var(--color2);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+/* ############################### Nos maisons ############################### */
+
+.all-houses {
+  padding: 0 60px;
+}
+.house-grid {
+  display: grid;
+  min-height: 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  padding: 40px 0;
+}
+
+#house1 {
+  background: url(../img/nos_maisons/1.jpg) center/cover;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+#house2 {
+  background: url(../img/nos_maisons/2.jpg) center/cover;
+  grid-column: 3/5;
+}
+#house3 {
+  background: url(../img/nos_maisons/3.jpg) center/cover;
+  grid-column: 3/5;
+}
+#house4 {
+  background: url(../img/nos_maisons/4.jpg) center/cover;
+  grid-column: 1;
+  grid-row: 3/5;
+}
+#house5 {
+  background: url(../img/nos_maisons/5.jpg) center/cover;
+  grid-column: 2/4;
+  grid-row: 3/5;
+}
+#house6 {
+  background: url(../img/nos_maisons/6.jpg) center/cover;
+  grid-column: 4;
+  grid-row: 3/5;
+}
+
+
+
+/* ########################### DEV TOOL RED BORDER ########################### */
+
+/* * { border: solid 1px red; } */
