@@ -12,12 +12,15 @@
 }
 /* ################################# GLOBAL ################################# */
 
+html, body { overflow-x:hidden; }
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   list-style: none;
   font-family: "Lato", Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 .top-page {
   color: white;
@@ -25,6 +28,7 @@
 h1 {
   font-size: 4rem;
   font-weight: 400;
+  margin: auto 0;
 }
 h2 {
   font-size: 2.5rem;
@@ -63,7 +67,9 @@ section.top-page {
 header {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: start;
+  position: relative;
+  padding-left: 50px;
 }
 #logo {
   width: 150px;
@@ -77,13 +83,19 @@ nav {
   font-weight: 600;
 }
 .landing-page {
+  display: flex;
   padding: 20px 50px;
+  height: 60%;
+  /* position: relative; */
+  
 }
 .scrolldown {
   position: absolute;
   bottom: 40px;
   font-size: 3rem;
   color: var(--color1);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ################################# Services ################################# */
@@ -91,7 +103,7 @@ nav {
 .services {
   display: flex;
   justify-content: space-around;
-  padding: 40px 40px;
+  padding: 60px 40px;
   width: 80%;
   height: 25vh;
   margin: 0 auto;
@@ -106,10 +118,13 @@ nav {
   font-weight: normal;
   text-align: center;
   width: 250px;
+  /* height: max-content; */
   margin: 0 20px;
 }
 .service-item i {
-  font-size: 3.5rem
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  
 }
 
 /* ######################### Notre sélection ######################### */
@@ -121,7 +136,7 @@ position: relative;
 
 .best {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* min-height: 400px; */
   flex-wrap: wrap;
   padding: 40px 0;
@@ -133,6 +148,11 @@ position: relative;
 .no-grid {
   min-width: 250px;
   height: 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
+  /* margin: ; */
+  /* flex-basis: 2%; */
   /* flex: 1; */
 }
 #best1 {
@@ -156,11 +176,11 @@ position: relative;
 }
 .house-location {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 1000;
 }
 .house-price {
   color: var(--color2);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   padding: 5px 0;
 }
@@ -172,9 +192,9 @@ position: relative;
 }
 .house-grid {
   display: grid;
-  min-height: 100px;
+  min-height: 800px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 200px);
+  grid-template-rows: repeat(4, 1fr);
   padding: 40px 0;
 }
 
@@ -207,8 +227,136 @@ position: relative;
   grid-row: 3/5;
 }
 
+/* ########################### FOOTER ########################### */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 100px;
+  font-weight: 500;
+  position: relative;
+  height: 60px;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 80%;
+  background: var(--color2);
+  top: 0px;
+}
 
 
-/* ########################### DEV TOOL RED BORDER ########################### */
+/* ######################### RESPONSIVE ######################### */
+
+@media screen and (max-width: 1250px) {
+  .no-grid {
+    flex-basis: 45%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width: 1008px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header {
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0px;
+  }
+  #logo {
+    width: 100px;
+  }
+  nav {
+    /* position: absolute; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0;
+    width: fit-content;
+    /* left: 60%; */
+    /* transform: translateX(-50%); */
+    font-size: 1rem;
+    font-weight: 600;
+    height: 100px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .landing-page {
+    padding: 20px 20px;
+  }
+  .services {
+    justify-content: space-between;
+    padding: 60px 0;
+    width: 100%;
+  }
+  .service-item {
+    font-size: 1rem;
+    width: 250px;
+    margin: 0 10px;
+  }
+  .service-item i {
+    font-size: 3rem
+  }
+  .our-selection {
+    padding: 0 20px;
+  }
+  .best {
+    justify-content: space-around;
+  }
+  .all-houses {
+    padding: 0 20px;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .no-grid {
+    flex-basis: 80%;
+  }
+  #house1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+  }
+  #house2 {
+    grid-column: 3/5;
+  }
+  #house3 {
+    grid-column: 3/5;
+  }
+  #house4 {
+    grid-column: 1/3;
+    grid-row: 3;
+  }
+  #house5 {
+    grid-column: 1/3;
+    grid-row: 4;
+  }
+  #house6 {
+    grid-column: 3/5;
+    grid-row: 3/5;
+  }
+  footer {
+    justify-content: space-around;
+    padding: 20px 20px;
+    font-weight: 500;
+    position: relative;
+    height: 60px;
+    font-size: 0.9rem;
+  }
+
+}
+/* ##################### DEV TOOL RED BORDER ##################### */
 
 /* * { border: solid 1px red; } */
