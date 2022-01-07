@@ -105,7 +105,7 @@ nav {
   justify-content: space-around;
   padding: 60px 40px;
   width: 80%;
-  height: 25vh;
+height: fit-content;
   margin: 0 auto;
 }
 .service-item {
@@ -140,17 +140,18 @@ position: relative;
   /* min-height: 400px; */
   flex-wrap: wrap;
   padding: 40px 0;
+  flex-basis: 100%;
 }
 .house-box {
   position: relative;
   margin: 10px;
 }
 .no-grid {
-  min-width: 250px;
-  height: 300px;
+  min-width: 150px;
+  min-height: 200px;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 20%;
+  /* flex-basis: 100%; */
   /* margin: ; */
   /* flex-basis: 2%; */
   /* flex: 1; */
@@ -267,6 +268,19 @@ footer::before {
   h2 {
     font-size: 2rem;
   }
+  .services {
+    justify-content: space-between;
+    padding: 40px 10px;
+    width: 100%;
+  }
+  .service-item {
+    font-size: 1.2rem;
+    width: 250px;
+    margin: 0 10px;
+  }
+  .service-item i {
+    font-size: 3rem
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -299,7 +313,7 @@ footer::before {
   }
   .services {
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 40px 0;
     width: 100%;
   }
   .service-item {
@@ -308,13 +322,13 @@ footer::before {
     margin: 0 10px;
   }
   .service-item i {
-    font-size: 3rem
+    font-size: 2.5rem
   }
   .our-selection {
     padding: 0 20px;
   }
   .best {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .all-houses {
     padding: 0 20px;
@@ -323,7 +337,7 @@ footer::before {
     font-size: 2rem;
   }
   .no-grid {
-    flex-basis: 80%;
+    flex-basis: 45%;
   }
   #house1 {
     grid-column: 1/3;
@@ -356,6 +370,30 @@ footer::before {
     font-size: 0.9rem;
   }
 
+}
+@media screen and (max-width: 350px) {
+  
+  h1 {
+    font-size: 2rem;
+  }
+  .scrolldown {
+    bottom: 20px;
+    font-size: 2rem;
+  }
+  .services {
+    /* margin-bottom: 100px; */
+    padding: 20px 0;
+  }
+  .service-item {
+    font-size: 1rem;
+  }
+  .service-item i {
+    font-size: 2em;
+    margin: 0 8px;
+  }
+  .no-grid {
+    flex-basis:80%;
+  }
 }
 /* ##################### DEV TOOL RED BORDER ##################### */
 
