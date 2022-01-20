@@ -1,7 +1,9 @@
-# training_graven_css_challenge  
+# Training - Graven css challenge
   
-*FR*  
-Projet d'entrainement CSS  
+## Training Project on CSS
+Web project on the theme of an online real estate agency to train me in css
   
-*EN*  
-Training Project on CSS  
+------
+  
+## Projet d'entrainement CSS
+Projet web sur le theme d'une agence immobilière en ligne pour m'entrainer en css
