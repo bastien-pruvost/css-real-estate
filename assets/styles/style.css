@@ -104,8 +104,8 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 60px 40px;
-  width: 80%;
-height: fit-content;
+  width: 90%;
+  height: fit-content;
   margin: 0 auto;
 }
 .service-item {
@@ -137,10 +137,11 @@ position: relative;
 .best {
   display: flex;
   justify-content: space-between;
-  /* min-height: 400px; */
+  margin: 0 auto;
   flex-wrap: wrap;
   padding: 40px 0;
   flex-basis: 100%;
+  width: 85%;
 }
 .house-box {
   position: relative;
@@ -149,12 +150,8 @@ position: relative;
 .no-grid {
   min-width: 150px;
   min-height: 200px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  /* flex-basis: 100%; */
-  /* margin: ; */
   /* flex-basis: 2%; */
-  /* flex: 1; */
+  flex: 1;
 }
 #best1 {
   background: url(../img/nos_meilleures_ventes/1.jpg) left/cover;
@@ -197,6 +194,8 @@ position: relative;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   padding: 40px 0;
+  width: 85%;
+  margin: 0 auto;
 }
 
 #house1 {
@@ -280,6 +279,12 @@ footer::before {
   }
   .service-item i {
     font-size: 3rem
+  }
+  .best {
+    width: 100%;
+  }
+  .house-grid {
+    width: 100%;
   }
 }
 
