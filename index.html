@@ -1,132 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>My Home - Agence immobilière en ligne</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Home - Agence immobilière en ligne</title>
-  <link rel="icon" type="image/png" href="./assets/img/logo.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-</head>
+  <body>
+    <div class="bg">
+      <section class="top-page">
+        <header>
+          <img src="./assets/img/logo.png" alt="Logo My Home" id="logo" />
+          <nav>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#our-selection">Notre sélection</a></li>
+            <li><a href="#all-houses">Nos maisons</a></li>
+          </nav>
+        </header>
+        <div class="landing-page">
+          <h1>My Home, <br />Votre agence immobilière en ligne</h1>
+        </div>
+        <a class="scrolldown" href="#services"><i class="fas fa-chevron-down"></i></a>
+      </section>
+    </div>
 
-<body>
-
-  <div class="bg">
-    <section class="top-page">
-      <header>
-        <img src="./assets/img/logo.png" alt="Logo My Home" id="logo">
-        <nav>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#our-selection">Notre sélection</a></li>
-          <li><a href="#all-houses">Nos maisons</a></li>
-        </nav>
-      </header>
-      <div class="landing-page">
-        <h1>My Home, <br>Votre agence immobilière en ligne</h1>
+    <section class="services" id="services">
+      <div class="service-item">
+        <i class="fas fa-eye"></i>
+        <p>Trouvez et visitez votre maison de rêve</p>
       </div>
-      <a class="scrolldown" href="#services"><i class="fas fa-chevron-down"></i></a>
+      <div class="service-item">
+        <i class="fas fa-pen-fancy"></i>
+        <p>Signez en ligne votre acte de vente</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-suitcase"></i>
+        <p>Amenagez sans craintes</p>
+      </div>
     </section>
-  </div>
 
-  <section class="services" id="services">
-    <div class="service-item">
-      <i class="fas fa-eye"></i>
-      <p>Trouvez et visitez votre maison de rêve </p>
-    </div>
-    <div class="service-item">
-      <i class="fas fa-pen-fancy"></i>
-      <p>Signez en ligne votre acte de vente</p>
-    </div>
-    <div class="service-item">
-      <i class="fas fa-suitcase"></i>
-      <p>Amenagez sans craintes</p>
-    </div>
-  </section>
+    <section class="our-selection" id="our-selection">
+      <h2>Notre sélection</h2>
+      <div class="best">
+        <a href="#" class="house-box no-grid" id="best1">
+          <div class="house-details">
+            <p class="house-location">Paris</p>
+            <p class="house-price">1 000 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box no-grid" id="best2">
+          <div class="house-details">
+            <p class="house-location">Paris</p>
+            <p class="house-price">1 000 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box no-grid" id="best3">
+          <div class="house-details">
+            <p class="house-location">Paris</p>
+            <p class="house-price">1 000 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box no-grid" id="best4">
+          <div class="house-details">
+            <p class="house-location">Paris</p>
+            <p class="house-price">1 000 000 €</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <section class="our-selection" id="our-selection">
-    <h2>
-      Notre sélection
-    </h2>
-    <div class="best">
-      <a href="#" class="house-box no-grid" id="best1">
-        <div class="house-details">
-          <p class="house-location">Paris</p>
-          <p class="house-price">1 000 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box no-grid" id="best2">
-        <div class="house-details">
-          <p class="house-location">Paris</p>
-          <p class="house-price">1 000 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box no-grid" id="best3">
-        <div class="house-details">
-          <p class="house-location">Paris</p>
-          <p class="house-price">1 000 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box no-grid" id="best4">
-        <div class="house-details">
-          <p class="house-location">Paris</p>
-          <p class="house-price">1 000 000 €</p>
-        </div>
-      </a>
-    </div>
-  </section>
+    <section class="all-houses" id="all-houses">
+      <h2>Nos maisons</h2>
+      <div class="house-grid">
+        <a href="#" class="house-box" id="house1">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box" id="house2">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box" id="house3">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box" id="house4">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box" id="house5">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+        <a href="#" class="house-box" id="house6">
+          <div class="house-details">
+            <p class="house-location">Toulouse</p>
+            <p class="house-price">900 000 €</p>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  <section class="all-houses" id="all-houses">
-    <h2>
-      Nos maisons
-    </h2>
-    <div class="house-grid">
-      <a href="#" class="house-box" id="house1">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box" id="house2">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box" id="house3">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box" id="house4">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box" id="house5">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-      <a href="#" class="house-box" id="house6">
-        <div class="house-details">
-          <p class="house-location">Toulouse</p>
-          <p class="house-price">900 000 €</p>
-        </div>
-      </a>
-    </div>
-
-  </section>
-
-  <footer>
-    <p class="copyright">&copy; 2021 - My Home</p>
-    <a href="#" class="cgv">Conditions générales de vente</a>
-  </footer>
-
-</body>
-
+    <footer>
+      <p class="copyright">&copy; 2021 - My Home</p>
+      <a href="#" class="cgv">Conditions générales de vente</a>
+    </footer>
+  </body>
 </html>
